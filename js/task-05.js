@@ -8,8 +8,20 @@ const refs = {
 refs.input.addEventListener('input', onInputChange)
 
 function onInputChange(event) {
-    console.log(event.currentTarget.value);
-    refs.result.textContent = event.currentTarget.value;
+    const value = event.target.value.trim();
+    console.log(refs.result);
+    if (!value) {
+        refs.result.textContent = 'Anonymous' 
+        return;
+    }
+
+    refs.result.textContent = value;
+    // if (refs.result = ) {
+    //     refs.result.textContent = Anonymous;
+    // }
+
+
+    
 }
    
 // console.log(refs.inputEl, refs.result);
