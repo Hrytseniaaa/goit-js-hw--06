@@ -2,7 +2,7 @@
 
 
 
-const counterValue = 0;
+let counterValue = 0;
 
 const refs  = {
 
